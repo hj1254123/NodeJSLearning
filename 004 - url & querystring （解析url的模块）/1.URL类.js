@@ -13,6 +13,7 @@ console.log('比较两个API', require('url').URL === URL) //true
 // new URL(input[, base])：实例化一个 URL 对象,来使用。
 // input：URL，在为绝对路径时省略base参数。
 // base：基础路径，在input是相对路径时使用，自动算出最终路径。
+//      注意这个基础路径要完整：如http://example.com/api/,`http://`不要漏了，会出现BUG
 
 
 // 例子：
